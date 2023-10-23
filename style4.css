@@ -1,0 +1,126 @@
+html{
+    font-family: 'Montserrat', sans-serif;
+}
+  body{
+    font-family: sans-serif;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: antiquewhite;
+}
+header{
+    display: flex;
+    min-height: 70px;
+    background-color: #6EBB53;
+    justify-content:space-between ;
+    align-items: center;
+    padding: 10px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    height: 50px;
+    margin-right: 10px;
+}
+nav a{
+    font-weight:600 ;
+    padding-right: 10px;
+}
+nav a:hover{
+    color: rgb(226, 226, 102) ;
+}
+@media(max-width:700px){
+    header{
+        flex-direction: column;
+    }
+    nav{
+        padding: 10px 0px;
+    }
+}
+
+#fondo {
+    min-height: 100%;
+    background-color: #B1EA8E; /* Cambia el color de fondo según tus preferencias */
+    padding: 50px; /* Espaciado interior del div */
+}
+
+h1 {
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #90D67E;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+label, input {
+    width: 100%;
+    margin-bottom: 10px;
+    background-color: #c4eaac;
+}
+
+input[type="date"],
+input[type="number"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #BBEC9D;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#error-message {
+    color: red;
+    font-weight: bold;
+    
+}
+
+
+
+footer {
+    background-color: #6EBB53;
+    padding: 3rem;
+    color: antiquewhite;
+}
+
+footer section {
+    float: right;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    transition: color 0.3s ease;
+    color: antiquewhite;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: rgb(226, 226, 102);
+}
+

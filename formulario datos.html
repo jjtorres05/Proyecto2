@@ -1,0 +1,76 @@
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title> Formulario de datos</title>
+        <link rel="stylesheet" href="style4.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Pixelify+Sans&display=swap" rel="stylesheet">
+        <script defer src="formulario.js"></script>
+    </head>
+    <body>
+        <header>
+            <a href="index.html"class="logo">
+                <img src="logo.png" alt="Logo de la pagina">
+                <h2 class="nombre empresa">Inicio</h2>
+            </a>
+            <div>
+                <nav>
+                    <a href="informacion general.html" class="nav-link">Informacion general</a>
+                    <a href="Obtencion y descripcion de datos.html" class="nav-link"> Obtención y descripcion de datos</a>
+                    <a href="formulario datos.html" class="nav-link">Formulario de datos</a>
+                    <a href="producto datos.html" class="nav-link">Producto de datos</a>
+                    <a href="nosotros.html" class="nav-link">Nosotros</a>
+                </nav>
+            </div>
+        </header>
+        <div id="fondo">
+            <h1>Formulario de Datos</h1>
+            <div class="container">
+                <form id="data-form">
+                    <label for="fechaPublicada">Fecha Publicada:</label>
+                    <input type="date" id="fechaPublicada" required>
+
+                    <label for="mesPesos">Mes Pesos:</label>
+                    <input type="date" id="mesPesos" required>
+
+                    <label for="mesVigencia">Mes Vigencia:</label>
+                    <input type="date" id="mesVigencia" required>
+
+                    <label for="costoCr01">Costo CR01:</label>
+                    <input type="text"id="costoCr01" required>
+
+                    <label for="costoCr02">Costo CR02:</label>
+                    <input type="text"id="costoCr02" required>
+
+                    <label for="costoCr03">Costo CR03:</label>
+                    <input type="text"id="costoCr03" required>
+
+                    <label for="costoCr04">Costo CR04:</label>
+                    <input type="text"id="costoCr04" required>
+
+                    <label for="costoEstrato4">Costo Estrato 4:</label>
+                    <input type="text" id="costoEstrato4" required>
+
+                    <button type="button" onclick="validateForm()">Enviar</button>
+
+        </form>
+        <p id="error-message"></p>
+    </div>
+        </div>
+        <footer>
+            <section>
+              <a href="formulario datos.html">Ir al comienzo</a>
+              <a href="mailto:juanj-torresh@unilibre.edu.co">Contáctame aquí</a>
+              <a href="https://www.linkedin.com/in/juan-jose-torres-hernandez/">linkedin</a>
+              <a href="https://github.com/jjtorres05/Proyecto">Github</a>
+            </section>   
+              <p>Copyright Juan Jose Torres 2023</p>
+        </footer> 
+
+    </body>
+</html>

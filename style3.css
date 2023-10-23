@@ -1,0 +1,157 @@
+html{
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    font-family: sans-serif;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: antiquewhite;
+}
+header{
+    display: flex;
+    min-height: 70px;
+    background-color: #6EBB53;
+    justify-content:space-between ;
+    align-items: center;
+    padding: 10px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    height: 50px;
+    margin-right: 10px;
+}
+nav a{
+    font-weight:600 ;
+    padding-right: 10px;
+}
+nav a:hover{
+      color: rgb(226, 226, 102) ;
+  }
+  @media(max-width:700px){
+    header{
+        flex-direction: column;
+      }
+    nav{
+        padding: 10px 0px;
+      }
+}
+.contenedor1 {
+    position: relative;
+    background-image: url("monte.jpg");
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+  }
+#fondo {
+    min-height: 100%;
+    background-color: #B1EA8E; /* Cambia el color de fondo según tus preferencias */
+    padding: 50px; /* Espaciado interior del div */
+}
+.contenedor2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+h2 {
+    width: 100%;
+    text-align: center;
+}
+
+.columna1 {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    text-align: center;
+    margin-top: 10px;
+    max-width: 400px;
+    margin-right: 200px;
+
+}
+
+.contenido-columna1 h3, .contenido-columna1 p {
+    display: inline; /* Coloca el h3 y el p en línea uno junto al otro */
+}
+.contenido-columna1 h3:not(:last-child), .contenido-columna1 p:not(:last-child){
+    margin-bottom: 100px;
+}
+
+.columna2 {
+    flex: 1;
+    text-align: center;
+    margin-top: 15px;
+    margin-left: 200px;
+    max-width: 400px;
+
+}
+.linea-separacion {
+    border-top: 3px solid #EFEFEF; /* Agregar un borde blanco en la parte superior para crear la línea de separación */
+    margin-top: 30px ; /* Ajustar el margen para controlar el espacio entre las secciones */
+    padding: 0; /* Asegurarse de que no haya relleno en el elemento de separación */
+}
+.contenedor3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+  
+.columna1i {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column; /* Cambia la dirección de flexión a columna */
+    align-items: center; /* Centra verticalmente los elementos en la columna */
+    margin-top: 10px;
+}
+  
+.columna1i img {
+    margin-bottom: 10px; /* Agrega espacio entre las imágenes */
+    width: 600px;
+    height: auto;
+}
+  
+.columna2i {
+    flex: 1;
+    margin-top: 32.5px; /* Alinea la columna2i con la columna1i */
+    text-align: center;
+}
+.columna2i img{
+    height: auto;
+    width: 595px;
+}
+.imagen1:hover,.imagen2:hover,.imagen3:hover{
+    box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 4);
+}
+footer {
+    background-color: #6EBB53;
+    padding: 3rem;
+    color: antiquewhite;
+}
+
+footer section {
+    float: right;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    transition: color 0.3s ease;
+    color: antiquewhite;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: rgb(226, 226, 102);
+}
+
