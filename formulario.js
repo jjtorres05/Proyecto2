@@ -1,7 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
+    
     const form = document.getElementById("data-form");
     
     form.addEventListener("submit", function (event) {
+        event.preventDefault()
         const errorMessage = document.getElementById("error-message");
         errorMessage.textContent = ""; // Restablece el mensaje de error
     
@@ -24,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
             isNaN(costoCr04) ||
             isNaN(costoEstrato4)
         ) {
-            errorMessage.textContent = "Por favor, completa todos los campos correctamente.";
+            errorMessage.innerHTML = "Por favor, completa todos los campos correctamente.";
             event.preventDefault(); // Evita el envío del formulario si hay errores
         }
     });
